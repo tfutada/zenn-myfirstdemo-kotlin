@@ -13,6 +13,6 @@ fun main() {
 fun sendMoneyWithLog(f: () -> Int) {
     println("in getMoneyWithLog")
     val money = f()
-    println("send modey: $money")
+    println("send money: $money")
 }
 

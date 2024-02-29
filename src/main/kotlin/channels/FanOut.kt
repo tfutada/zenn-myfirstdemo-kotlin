@@ -18,6 +18,7 @@ fun main() = runBlocking {
 
         println("Received $nextNumber")
     }
+
     producer1.cancel() // cancel producer coroutine because we don't need it anymore
     producer2.cancel() // cancel producer coroutine because we don't need it anymore
 }
