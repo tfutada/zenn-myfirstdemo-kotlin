@@ -12,7 +12,7 @@ fun main() = runBlocking {
     }
 
     launch {
-        counter = 9
+        counter = 9 // update it
         println("in launch: counter = $counter")
     }
 
@@ -21,7 +21,7 @@ fun main() = runBlocking {
 
 suspend fun sendMoneyWithLog2(f: () -> Int) {
     println("in sendMoneyWithLog")
-//    delay(3000) // Simulates some processing delay
+    delay(3000) // Simulates some processing delay
     val money = f()
     println("send money: $money")
 }
