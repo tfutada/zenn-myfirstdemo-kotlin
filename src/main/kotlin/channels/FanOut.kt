@@ -7,6 +7,9 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.selects.select
 import kotlin.time.Duration
 
+// There are two producers and one consumer.
+// The consumer selects the next number from the first producer or the second producer.
+// The two producers produce incremental numbers with different delays.
 fun main() = runBlocking {
     val producer1 = produceNumbers(100) // get a producer coroutine
     val producer2 = produceNumbers(300) // get a producer coroutine
@@ -30,3 +33,4 @@ fun CoroutineScope.produceNumbers(duration: Long) = produce<Int> {
         delay(duration) // wait 0.1s
     }
 }
+
