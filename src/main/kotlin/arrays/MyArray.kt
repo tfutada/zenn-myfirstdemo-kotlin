@@ -6,6 +6,9 @@ fun main() {
     // Using the += assignment operation creates a new riversArray,
     // copies over the original elements and adds "Mississippi"
     riversArray += "Mississippi"
+
+    riversArray[0] = "Congo"
     println(riversArray.joinToString())
 }
+
 
