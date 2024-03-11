@@ -1,6 +1,7 @@
 package jp.tf.hello
 
 fun main() {
-    println("Hello, world!")
+    val hello = "world!"
+    println("Hello, $hello")
 }
 
