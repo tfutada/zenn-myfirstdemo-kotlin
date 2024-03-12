@@ -10,6 +10,10 @@ fun main() {
 
     val ret =  a.toString()
 
+    val price = 100
+    val aInt: Int? = price as? Int
+    println(aInt)
+
     var b: String = "abc"
 //    b = null // compilation error
 }
