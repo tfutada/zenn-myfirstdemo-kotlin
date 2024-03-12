@@ -17,4 +17,3 @@ fun main() {
     var b: String = "abc"
 //    b = null // compilation error
 }
-
